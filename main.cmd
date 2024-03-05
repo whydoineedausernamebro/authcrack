@@ -22,7 +22,7 @@ echo.
 echo [2;96m║
 echo [2;96m║
 setlocal EnableDelayedExpansion
-set /p count="[2;96m╚══════>> Select number of 2FA codes you want to see. atleast 200k if you want to see yours, might take some time. "
+set /p count="[2;96m╚══════>> Select number of 2FA codes you want to see. might take some time. "
 echo.
 
 if "!count!" lss "1" (

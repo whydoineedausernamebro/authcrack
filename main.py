@@ -1,6 +1,6 @@
 import random
 
-class Colors
+class Colors:
     RED = '[2;31m'
     CYAN = '[2;96m'
     BRIGHT-RED = '[2;91m'

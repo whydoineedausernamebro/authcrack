@@ -1,4 +1,4 @@
- this is a project for cracking into roblox accounts bypassing 2FA, this can be ran on replit
+ this is a project for cracking into roblox accounts with 2FA enabled, this can be ran on replit
 
 ## steps for downloading on linux:
 step 1: $ git clone https://github.com/whydoineedausernamebro/authcrack

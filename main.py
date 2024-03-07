@@ -1,9 +1,8 @@
 import random
+from colorama import init, Fore, Style
 
-class Colors:
-    RED = '[2;31m'
-    CYAN = '[2;96m'
-    BRIGHT-RED = '[2;91m'
+
+init(autoreset=True)
 
 def generate_six_digit_number(exclude_numbers):
     while True:
@@ -12,36 +11,36 @@ def generate_six_digit_number(exclude_numbers):
             return code
 
 def main():
-print(Colors.RED +'                                          ╔══════════════════════════════════════════════════╗')                                                  
-print(Colors.RED +'                                          ║ ▄▄▄· ▄• ▄▌▄▄▄▄▄ ▄ .▄     ▄▄· ▄▄▄   ▄▄▄·  ▄▄· ▄ •▄║')
-print(Colors.RED +'                                          ║▐█ ▀█ █▪██▌•██  ██▪▐█    ▐█ ▌▪▀▄ █·▐█ ▀█ ▐█ ▌▪█▌▄ ║')
-print(Colors.RED +'                                          ║ ▄█▀▀█ █▌▐█▌ ▐█.▪██▀▐█   ██ ▄▄▐▀▀▄ ▄█▀▀█ ██ ▄▄▐▀▀ ║')
-print(Colors.RED +'                                          ║ █ ▪▐▌▐█▄█▌ ▐█▌·██▌▐▀    ▐███▌▐█•█▌▐█ ▪▐▌▐███▌▐█.█║')
-print(Colors.RED +'                                          ║ ▀  ▀  ▀▀▀  ▀▀▀ ▀▀▀ ·    ▀▀▀ .▀  ▀ ▀  ▀ ·▀▀▀ ·▀  █║')
-print(Colors.RED +'                                          ╚══════════════════════════════════════════════════╝')
+print(Fore.RED +'                                          ╔══════════════════════════════════════════════════╗')                                                  
+print(Fore.RED +'                                          ║ ▄▄▄· ▄• ▄▌▄▄▄▄▄ ▄ .▄     ▄▄· ▄▄▄   ▄▄▄·  ▄▄· ▄ •▄║')
+print(Fore.RED +'                                          ║▐█ ▀█ █▪██▌•██  ██▪▐█    ▐█ ▌▪▀▄ █·▐█ ▀█ ▐█ ▌▪█▌▄ ║')
+print(Fore.RED +'                                          ║▄█▀▀█ █▌▐█▌ ▐█.▪██▀▐█    ██ ▄▄▐▀▀▄ ▄█▀▀█ ██ ▄▄▐▀▀ ║')
+print(Fore.RED +'                                          ║ █ ▪▐▌▐█▄█▌ ▐█▌·██▌▐▀    ▐███▌▐█•█▌▐█ ▪▐▌▐███▌▐█.█║')
+print(Fore.RED +'                                          ║ ▀  ▀  ▀▀▀  ▀▀▀ ▀▀▀ ·    ▀▀▀ .▀  ▀ ▀  ▀ ·▀▀▀ ·▀  █║')
+print(Fore.RED +'                                          ╚══════════════════════════════════════════════════╝')
   
-    count = input(Colors.CYAN +"╚══════>> Select number of 2FA codes you want to see. might take some time.")
+    count = input(Fore.CYAN +"╚══════>> Select number of 2FA codes you want to see. might take some time.")
     
     if not count.isdigit() or int(count) < 1:
         print("Invalid input. Please enter a number greater than 0.")
         return
     
-    exclude_file = input(Colors.CYAN +"╚══════>> Enter the filename containing numbers to exclude: ")
+    exclude_file = input(Fore.CYAN +"╚══════>> Enter the filename containing numbers to exclude: ")
     
     try:
         with open(exclude_file, 'r') as file:
             exclude_numbers = {int(line.strip()) for line in file if line.strip().isdigit()}
     except FileNotFoundError:
-        print(f"The file {exclude_file} does not exist.")
+        print(Fore.RED + f"The file {exclude_file} does not exist.")
         return
     except Exception as e:
-        print(Colors.RED + f"An error occurred: {e}" + Colors.RESET)
+        print(Fore.RED + f"An error occurred: {e}")
         file.close()
         return        
     
     for i in range(1, int(count) + 1):
         code = generate_six_digit_number(exclude_numbers)
-        print(Colors.CYAN + "2FA code {i}: {code}")
+        print(Colors.GREEN + "2FA code {i}: {code}")
         file.close()
 
 if __name__ == "__main__":

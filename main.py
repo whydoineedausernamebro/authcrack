@@ -34,10 +34,15 @@ print(Colors.RED +'                                          ╚═════�
     except FileNotFoundError:
         print(f"The file {exclude_file} does not exist.")
         return
+    except Exception as e:
+        print(Colors.RED + f"An error occurred: {e}" + Colors.RESET)
+        file.close()
+        return        
     
     for i in range(1, int(count) + 1):
         code = generate_six_digit_number(exclude_numbers)
         print(Colors.CYAN + "2FA code {i}: {code}")
+        file.close()
 
 if __name__ == "__main__":
     main()

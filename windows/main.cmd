@@ -1,4 +1,7 @@
 @echo off
+
+:: github.com/whydoineedausernamebro/authcrack
+
 title Auth Crack
 color 04
 chcp 65001 >nul

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# https://github.com/whydoineedausernamebro/authcrack
+
 RED='[2;91m'
 CYAN='[2;96m'
 GREEN='[0;32m'

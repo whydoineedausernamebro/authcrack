@@ -17,7 +17,7 @@ echo                                      [2;31m║[2;91m▐█ ▪▐▌▐�
 echo                                      [2;31m║[2;91m ▀  ▀  ▀▀▀  ▀▀▀ ▀▀▀ ·    [2;96m▀▀▀ .▀  ▀ ▀  ▀ ·▀▀▀ ·▀   [2;31m║
 echo                                      [2;31m╚══════════════════════════════════════════════════╝                                         
 echo                                                          Generates 100 codes per second.
-echo i am not gonna use the universal dev excuse, this was made to crack into other people's accounts.           
+echo made by the imperial tolleist empire of robloxia           
 echo.
 echo.
 echo.

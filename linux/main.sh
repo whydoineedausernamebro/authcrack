@@ -15,6 +15,7 @@ echo -e "${RED}                                         ║▐█ ▪▐▌▐�
 echo -e "${RED}                                         ║ ▀  ▀  ▀▀▀  ▀▀▀ ▀▀▀ ·    ▀▀▀ .▀  ▀ ▀  ▀ ·▀▀▀ ·▀   ║ ${NC}"
 echo -e "${RED}                                         ╚══════════════════════════════════════════════════╝ ${NC}"
 echo -e "${GREEN}                                        Generates 100 codes per second. ${NC}"
+echo -e "${GREEN} "made by the imperial tolleist empire of robloxia ${NC}"
 
 read -p "${CYAN}Select number of 2FA codes you want to see. might take some time. ${NC}" count
 

@@ -32,10 +32,10 @@ if "!count!" lss "1" (
     goto :eof
 )
 
-set /p excludeFile="╚══════>>Enter the filename containing codes to exclude: "
+set /p excludeFile="╚══════>>Enter the path to the file containing codes to exclude: "
 
 if not exist "!excludeFile!" (
-    echo The file !excludeFile! does not exist.
+    echo The path !excludeFile! does not exist.
     goto :eof
 )
 

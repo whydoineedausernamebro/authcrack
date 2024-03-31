@@ -17,6 +17,6 @@
 --------
 <br><br>
 <strong>
-* iter is not responsible for any damage caused by this program, this was made with the intention of educational purposes, please only use this on authorized test accounts
+* i am not responsible for any damage caused by this program, this was made with the intention of educational purposes, please only use this on authorized test accounts
 </strong>
 </br>

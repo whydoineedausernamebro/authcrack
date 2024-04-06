@@ -1,3 +1,5 @@
+<img scr="https://img.shields.io/badge/license-EPL-green?style=for-the-badge">
+
 --------
 
 ### <p align="center">authcrack</p>
